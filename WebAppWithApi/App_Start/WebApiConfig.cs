@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Ninject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using WebAppWithApi.Models;
 
 namespace WebAppWithApi
 {
@@ -10,7 +12,7 @@ namespace WebAppWithApi
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
